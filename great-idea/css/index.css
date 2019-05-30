@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* Overall code */
+/********** Website-wide Code **********/
 
 html {
 	/* height:1536px; */
@@ -76,7 +76,7 @@ html {
 .menu {
 	margin-top: 15px;
 	display:flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 nav a {
@@ -86,12 +86,17 @@ nav a {
 }
 
 .logo {
-	padding-left: 30px;
+	padding-left: 20px;
+}
+
+.text {
+	padding: 5px;
+	width: 45%;
 }
 
 .lineBreak {
 	border-top: 1px solid black;
-	margin: 3% 8% 3% 8%;
+	margin: 3% 7% 3% 7%;
 }
 
 footer {
@@ -99,7 +104,7 @@ footer {
 	padding: 50px;
 }
 
-/* Main page */
+/********** Main page **********/
 
 .tagCircle {
 	display: flex;
@@ -126,50 +131,25 @@ button {
 
 .top-content {
 	display: flex;
-	margin-right: 20px;
-}
-
-.features {
-	margin-left: 70px;
-	padding: 5px;
-	width: 45%;
-}
-
-.about {
-	padding: 5px;
-	width: 45%;
+	margin-left: 7%;
 }
 
 .middle-img {
 	padding: 25px;
-	margin-left: 49px;
+	margin-left: 5%;
 }
 
 .bottom-content {
 	display: flex;
 	margin-left: 7%;
-}
-
-.services {
-	padding: 5px;
-	width: 30%;
-}
-
-.product {
-	padding: 5px;
-	width: 30%;
-}
-
-.vision {
-	padding: 5px;
-	width: 30%;
+	margin-right: 7%
 }
 
 .contact {
 	margin-left: 79px;
 }
 
-/* Services page */
+/********** Services page **********/
 
 .servicesIntro {
 	margin-left: 7%;
@@ -208,10 +188,6 @@ h2 {
 	margin-left: 7%;
 	}
 
-.serviceFacts {
-	width: 425px;
-}
-
 .servList {
 	list-style-type: square;
 	padding-left: 20px;
@@ -219,4 +195,47 @@ h2 {
 
 .services-info-img {
 	padding-left: 35px;
+}
+
+/********** Features page **********/
+
+.featuresWrapper {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000px;
+	justify-content: center;
+}
+
+.manyFeatures {
+	border: 1px dashed red;
+	background-color: lightgreen;
+	padding: 10px;
+	margin: 10px;
+	width: 250px;
+	text-align: center;
+}
+
+.featureImg {
+	width: 225px;
+	height: 225px;
+}
+
+.moreFactWrapper {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000px;
+	justify-content: center;
+}
+
+.proFeat {
+	font-size: 300%;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+.features-footer-img {
+	height: 100px;
+	width: 750px;
 }
